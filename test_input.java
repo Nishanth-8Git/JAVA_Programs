@@ -8,5 +8,6 @@ public class test_input
         System.out.println("Seeing if this accepts inputs:");
         String test = in.next();
         System.out.println(test);
+        in.close();
     }
 }
