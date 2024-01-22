@@ -36,9 +36,36 @@ class sub1 extends sup1{
 /////////////////////////////////////////////~Test Completed Successfully.~/////////////////////////
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Testing abstract classes in java with some huge method enforcements//////////////
 abstract class actual{
+    ///Making the sub-classes to implement these inside them (forcefully using abstract classes.)
+   abstract int must_method1();
+   abstract double must_method2();
+   abstract void must_method3();
+   abstract void must_method4();
 
+}
+
+class trial1 extends actual{
+    int must_method1(){
+        int ret;
+        ret =1;
+        return ret;
+    }
+
+    double must_method2(){
+        double retu;
+        retu=1.33;
+        return retu;
+    }
+
+    void must_method3(){
+
+    }
+
+    void must_method4(){
+
+    }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
