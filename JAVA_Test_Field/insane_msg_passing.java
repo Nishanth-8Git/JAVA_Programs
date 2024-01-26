@@ -82,6 +82,6 @@ public class insane_msg_passing{
 
         A.random_one();
         B.random_two();
-        sub1.random_three();
+        s.random_three();
     }
 }
