@@ -7,7 +7,7 @@ final public class App {
         Secure Security = new Secure();
         booking booker = new booking();
 
-        Scanner         javain = new Scanner(System.in);
+        Scanner javain = new Scanner(System.in);
         name_printer  n   = new name_printer();
         final String fontSize = "\u001B[6;1m";
         final String resetFontSize = "\u001B[0m";
@@ -39,6 +39,11 @@ final public class App {
                 booker.booking_ph0();
                 booker.booking_ph1();
                 Security.prot1();
+                booker.booking_ph2();
+                booker.booking_ph3();
+                Security.prot2();
+                Security.debug_prot();
+                booker.booking_ph4();
                 break;
             
             case "CONFIRM":

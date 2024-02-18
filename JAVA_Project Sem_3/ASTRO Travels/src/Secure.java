@@ -3,12 +3,12 @@ import java.util.Scanner;
 
  final class Secure {
 
-    Secure() throws InterruptedException
-   {
+    Secure() throws InterruptedException{
+        
     String YELLOW = "\u001B[33m";
     String RESET = "\u001B[0m";
 
-    System.out.println(YELLOW+"TOWER Security V:1.0.0.1a");
+    System.out.println(YELLOW+"[TOWER Security] V : 1.0.0.1a ");
     System.out.print("Secure protocol Initiated.");
     Thread.sleep(500);
     System.out.print(".");
@@ -22,9 +22,8 @@ import java.util.Scanner;
     System.out.print(".");
     Thread.sleep(500);
     System.out.println(" Command given to Pilot program!!"+RESET);
-
    }
-
+   
    private int p, q , n, phi, e, d;
 
    private char characters[];
@@ -34,7 +33,7 @@ import java.util.Scanner;
    protected void prot1()
    {
       // Accept input string
-      System.out.print("Enter a string: ");
+      System.out.print("Enter any random word: ");
       String input = javain.nextLine();
 
       // Split the string into individual characters
@@ -54,7 +53,7 @@ import java.util.Scanner;
     d = modInverse(e, phi);
    }
 
-   private void debug_prot()
+   protected void debug_prot()
    {
     // Display the public and private keys
     System.out.println("\nPublic Key (n, e): (" + n + ", " + e + ")");

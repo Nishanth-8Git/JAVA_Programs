@@ -10,3 +10,9 @@ The workspace contains two folders by default, where:
 - `lib`: the folder to maintain dependencies.
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+## Team Members: 
+- Nishanth 
+- Shroumith Simha `( Leader )`
+- Aradhana
+- Nishmitha
