@@ -42,16 +42,19 @@ final public class App {
                 booker.booking_ph2();
                 booker.booking_ph3();
                 Security.prot2();
-                Security.debug_prot();
+                Security.Key_printer();
+                //Security.debug_prot();
                 booker.booking_ph4();
                 break;
             
             case "CONFIRM":
-            System.out.println("Welcome to ASTRO, enter something :");
+            System.out.println("Welcome to ASTRO booking confirmation dept. , Please enter the details as followed by the prmopt: ");
+            Confirmer.reader();
+
             break;
 
             case "EXIT":
-            System.out.println("Thank you for using ASTRO!");
+            System.out.println("Thank you for using ASTRO services!, hope you have a great day.");
             return;
 
 

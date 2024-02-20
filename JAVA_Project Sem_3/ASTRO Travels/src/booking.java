@@ -13,7 +13,7 @@ final class booking {
         private String pax_ch_1; // can use same but using diff ones just to be safe.
         private String pax_dest;
         private String pax_dept;
-        private String pax_name[];
+        private String pax_name[] = new String[20] ;
 
         //fun :)
         final private String FS = "\u001B[6;1m";
@@ -92,7 +92,7 @@ final class booking {
                         
                         case ("Domestic"):
                         {   System.out.println();
-                            System.out.print("Booking flights to domestic ariport.");
+                            System.out.println("Booking flights to domestic ariport.");
                    
                             while(true)
                             {
@@ -243,6 +243,8 @@ final class booking {
     System.out.println("Enter the names of the passengers :");
     for(int k=0 ;k<num_pax; k++){
         System.out.println("Passenger ["+(k+1)+"] :");
+        pax_name[k] = bookin.next();  //Used to read the passengers names.
+
     }
 
 
@@ -291,7 +293,7 @@ final class booking {
                 System.out.println("Redirecting to start....");
                 System.out.println();
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(555);
                 } catch (InterruptedException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -310,19 +312,6 @@ final class booking {
 
 
   void booking_passer(){
-
-   // fl_ag.call();
-    /**
-     * 
-     * 
-     *     private int num_pax, num_pax_chl, pax_dd, pax_mm;
-        private int pax_yy = 2024;
-        private int pl_lim;
-        private String pax_ch_1; // can use same but using diff ones just to be safe.
-        private String pax_dest;
-        private String pax_dept;
-     */
-
-
+   fl_ag.call(pax_dest,pax_dept,pax_name,num_pax_chl,num_pax,pax_dd,pax_mm,pax_yy);
  }
 }

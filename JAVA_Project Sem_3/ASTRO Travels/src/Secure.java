@@ -2,9 +2,10 @@ import java.util.Random;
 import java.util.Scanner;
 
  final class Secure {
+    array_writer aw = new array_writer();
 
     Secure() throws InterruptedException{
-        
+
     String YELLOW = "\u001B[33m";
     String RESET = "\u001B[0m";
 
@@ -69,6 +70,20 @@ import java.util.Scanner;
         System.out.printf("%-12c %-12d %c\n", ch, encryptedNumber, decryptedChar);
     }
    }
+
+   protected void Key_printer(){
+    
+    String YELLOW = "\u001B[33m";
+    String RESET = "\u001B[0m";
+
+    System.out.println("Private Identifier[Must be provided at the gate while checking-in] :");
+
+    System.out.println();
+    System.out.println(YELLOW+ d);
+    System.out.println(RESET);
+
+    array_writer.rsa_print(d);
+   } 
 
 
 
